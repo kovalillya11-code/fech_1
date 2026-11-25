@@ -1,5 +1,5 @@
 const API_URL = 'https://jsonplaceholder.typicode.com/posts/';
-const PAGE_SIZE = 6;
+const PAGE_SIZE = 12;
 
 const el = {
   search: document.getElementById('search'),
