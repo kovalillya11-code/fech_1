@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <p class="logo">POSTS</p>
+    </div>
+  </header>
+
+  <main class="content">
+    <h1 class="page-title">Публікації</h1>
+
+    <div class="toolbar">
+      <input
+        type="search"
+        id="search"
+        class="search-input"
+        placeholder="Пошук за заголовком"
+        autocomplete="off"
+      >
+    </div>
+
+    <div id="loading" class="post-grid" aria-live="polite">
+      <div class="skeleton-card">
+        <div class="skeleton-line short"></div>
+        <div class="skeleton-line title"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line"></div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton-line short"></div>
+        <div class="skeleton-line title"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line"></div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton-line short"></div>
+        <div class="skeleton-line title"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line"></div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton-line short"></div>
+        <div class="skeleton-line title"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line"></div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton-line short"></div>
+        <div class="skeleton-line title"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line"></div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton-line short"></div>
+        <div class="skeleton-line title"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line"></div>
+      </div>
+    </div>
+
+    <div id="error" class="state-box hidden" role="alert">
+      <h2>Не вдалося завантажити публікації</h2>
+      <p>Перевірте з'єднання з інтернетом або спробуйте пізніше.</p>
+      <button id="retry" class="retry-btn" type="button">Спробувати ще раз</button>
+    </div>
+
+    <div id="empty" class="state-box empty hidden">
+      <h2>Публікацій не знайдено</h2>
+    </div>
+
+    <section id="grid" class="post-grid hidden"></section>
+
+    <div class="load-more">
+      <button id="load-more" class="hidden" type="button">Завантажити ще</button>
+    </div>
+  </main>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
